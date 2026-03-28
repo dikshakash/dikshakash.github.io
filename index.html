@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diksha Kashyap | Data Analyst</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- 3D Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <a href="#" class="logo">DK<span class="accent">.</span></a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu glass-effect">
+        <div class="close-menu"><i class="fas fa-times"></i></div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+        <div class="hero-content">
+            <p class="greeting">Hello, I am</p>
+            <h1 class="glitch-text" data-text="Diksha Kashyap">Diksha Kashyap</h1>
+            <h2 class="role">Dynamic <span class="typing-text"></span><span class="cursor-blink">|</span></h2>
+            <p class="hero-desc">Data sets are my playground, and algorithms are my tools. Let's uncover the story behind the numbers.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary glow-effect">View Projects</a>
+                <a href="#contact" class="btn btn-secondary glass-effect">Contact Me</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+        <div class="about-container glass-card">
+            <div class="about-text">
+                <h3>Detail-oriented Data Analyst</h3>
+                <p>Hello! I am Diksha Kashyap, a Data Analyst passionate about discovering insights hidden in data. With strong fundamentals in Python, SQL, Excel, and Machine Learning, I aim to create data-driven solutions that add genuine value. I enjoy Exploratory Data Analysis (EDA) and optimizing algorithms for maximum efficiency.</p>
+                
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <h4 class="counter" data-target="15">0</h4>
+                        <p>Projects Done</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4 class="counter" data-target="10">0</h4>
+                        <p>Tech Skills</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4 class="counter" data-target="2">0</h4>
+                        <p>Years Learning</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-visual">
+                <div class="abstract-shape">
+                    <!-- CSS glowing shape -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title">My <span class="accent">Arsenal</span></h2>
+        <div class="skills-container">
+            <div class="three-sphere-container" id="skills-canvas-container">
+                <!-- Three.js Skill Sphere will be rendered here -->
+            </div>
+            <div class="skills-grid glass-card">
+                <div class="skill-item glow-hover">
+                    <i class="fab fa-python skill-icon"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-item glow-hover">
+                    <i class="fas fa-database skill-icon"></i>
+                    <span>SQL</span>
+                </div>
+                <div class="skill-item glow-hover">
+                    <i class="fas fa-code skill-icon"></i>
+                    <span>C++</span>
+                </div>
+                <div class="skill-item glow-hover">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <span>HTML/CSS</span>
+                </div>
+                <div class="skill-item glow-hover">
+                    <i class="fas fa-chart-line skill-icon"></i>
+                    <span>EDA</span>
+                </div>
+                <div class="skill-item glow-hover">
+                    <i class="fas fa-brain skill-icon"></i>
+                    <span>Machine Learning</span>
+                </div>
+                <div class="skill-item glow-hover">
+                    <i class="fas fa-sitemap skill-icon"></i>
+                    <span>Data Structures</span>
+                </div>
+                <div class="skill-item glow-hover">
+                    <i class="fas fa-laptop-code skill-icon"></i>
+                    <span>Problem Solving</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card tilt-card glass-effect" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+                <div class="project-img">
+                    <div class="img-placeholder">Sales Data Analysis</div>
+                </div>
+                <div class="project-info">
+                    <h3>Retail Store Sales Analysis</h3>
+                    <p>Performed deep EDA on a large retail dataset to identify sales trends and customer behavior using Python and Pandas.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="github-link"><i class="fab fa-github"></i> Repository</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card tilt-card glass-effect" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+                <div class="project-img">
+                    <div class="img-placeholder">Predictive Model</div>
+                </div>
+                <div class="project-info">
+                    <h3>House Price Prediction</h3>
+                    <p>Built a Machine Learning regression model to predict housing prices across different neighborhoods with high accuracy.</p>
+                    <div class="tech-stack">
+                        <span>Scikit-Learn</span>
+                        <span>Python</span>
+                        <span>NumPy</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="github-link"><i class="fab fa-github"></i> Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card tilt-card glass-effect" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+                <div class="project-img">
+                    <div class="img-placeholder">Dashboard UI</div>
+                </div>
+                <div class="project-info">
+                    <h3>Interactive Data Dashboard</h3>
+                    <p>Created an automated ETL pipeline that updates an interactive web dashboard with real-time analytics data.</p>
+                    <div class="tech-stack">
+                        <span>SQL</span>
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="github-link"><i class="fab fa-github"></i> Repository</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="experience" class="section">
+        <h2 class="section-title">Professional <span class="accent">Summary</span></h2>
+        <div class="timeline">
+            <div class="timeline-item glass-effect glow-hover">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">07/2025 - 08/2025</div>
+                <div class="timeline-content">
+                    <h3>Python Programming Internship</h3>
+                    <h4>Codetech IT Solutions</h4>
+                    <p>Engaged in building Python applications and backend scripts. Focused on algorithm optimization, efficient code practices, and exploring data science libraries.</p>
+                </div>
+            </div>
+            <!-- More timeline items could go here later -->
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <h2 class="section-title">Education <span class="accent">Background</span></h2>
+        <div class="timeline split-timeline">
+            <div class="timeline-item glass-effect left glow-hover">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023 - 2027</div>
+                <div class="timeline-content">
+                    <h3>BTech Data Science</h3>
+                    <h4>Teerthanker Mahaveer University</h4>
+                    <p>Focusing on advanced mathematics, statistics, data mining, machine learning, and comprehensive programming techniques.</p>
+                </div>
+            </div>
+            <div class="timeline-item glass-effect right glow-hover">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022 - 2023</div>
+                <div class="timeline-content">
+                    <h3>High School</h3>
+                    <h4>Saint Mira Academy</h4>
+                    <p>Completed higher secondary education with a strong foundation in science and mathematics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+        <div class="contact-container">
+            <div class="contact-info glass-card">
+                <h3>Contact Information</h3>
+                <p>Have a question or want to work together? Leave a message!</p>
+                
+                <div class="info-item glow-hover">
+                    <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                    <div class="details">
+                        <h4>Email</h4>
+                        <p>dikshakashyap@email.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-item glow-hover">
+                    <div class="icon-box"><i class="fas fa-phone"></i></div>
+                    <div class="details">
+                        <h4>Phone</h4>
+                        <p>+91 9876543210</p>
+                    </div>
+                </div>
+                
+                <div class="info-item glow-hover">
+                    <div class="icon-box"><i class="fab fa-linkedin"></i></div>
+                    <div class="details">
+                        <h4>LinkedIn</h4>
+                        <p>linkedin.com/in/dikshakashyap</p>
+                    </div>
+                </div>
+            </div>
+            
+            <form id="contact-form" class="glass-card contact-form">
+                <div class="input-group">
+                    <input type="text" id="name" required placeholder="Your Name">
+                    <div class="input-glow"></div>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" required placeholder="Your Email">
+                    <div class="input-glow"></div>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
+                    <div class="input-glow"></div>
+                </div>
+                <button type="submit" class="btn btn-primary glow-effect submit-btn">
+                    <span>Send Message <i class="fas fa-paper-plane"></i></span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <a href="#" class="logo">DK<span class="accent">.</span></a>
+            <p>&copy; 2024 Diksha Kashyap. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Vanilla Tilt for 3D interactions -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
